@@ -11,7 +11,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.*;
-import javafx.scene.effect.ColorInput;
 
 public class AppTest 
 {
