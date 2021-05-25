@@ -34,6 +34,9 @@ public class AppTest
         options.addArguments("--ignore-certificate-errors");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox"); // Bypass OS security model
+        options.addArguments("--disable-gpu");
+        options.addArguments("--disable-extensions");
+        options.addArguments("--remote-debugging-port=9222");
 
         driver = new ChromeDriver(options);
 
