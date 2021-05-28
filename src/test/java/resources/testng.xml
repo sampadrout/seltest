@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Selenium Test Suite">
+<suite name="Selenium Test Suite" parallel="tests" thread-count="2">
 
     <test name="Selenium Test - 1">
+        <classes>
+            <class name="com.seletest.AppTest"/>
+        </classes>
+    </test>
+    <test name="Selenium Test - 2">
         <classes>
             <class name="com.seletest.AppTest"/>
         </classes>
