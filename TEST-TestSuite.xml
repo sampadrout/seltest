@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="8.283" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="5.606" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
@@ -14,7 +14,7 @@
     <property name="os.name" value="Linux"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/adoptopenjdk-11-hotspot-amd64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/seltest/seltest/target/surefire/surefirebooter17673270745961647989.jar /home/runner/work/seltest/seltest/target/surefire 2021-05-28T10-53-04_556-jvmRun1 surefire8722851521712392345tmp surefire_012296153504708386899tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/seltest/seltest/target/surefire/surefirebooter15684053044963174614.jar /home/runner/work/seltest/seltest/target/surefire 2021-05-28T11-02-43_372-jvmRun1 surefire5016415898209568175tmp surefire_03375361042369168778tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/seltest/seltest/target/test-classes:/home/runner/work/seltest/seltest/target/classes:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/runner/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/runner/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/runner/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/runner/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/runner/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/runner/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/runner/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/runner/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/runner/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/runner/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/home/runner/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/home/runner/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/home/runner/.m2/repository/io/github/bonigarcia/webdrivermanager/4.4.3/webdrivermanager-4.4.3.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/runner/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/home/runner/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/runner/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/runner/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/home/runner/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/home/runner/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.2/httpcore5-h2-5.0.2.jar:/home/runner/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/home/runner/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/home/runner/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/home/runner/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/seltest/seltest/target/surefire/surefirebooter17673270745961647989.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/seltest/seltest/target/surefire/surefirebooter15684053044963174614.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.11+9"/>
     <property name="user.name" value="runner"/>
@@ -56,5 +56,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="doctest" classname="com.seletest.AppTest" time="1.702"/>
+  <testcase name="doctest" classname="com.seletest.AppTest" time="1.654"/>
 </testsuite>
