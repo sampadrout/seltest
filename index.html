@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Selenium_Test_Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Selenium_Test_Suite" class="show-methods passed suite-Selenium_Test_Suite"> (show)</a> <!-- show-methods passed suite-Selenium_Test_Suite -->
                     </span>
                     <div class="method-list-content passed suite-Selenium_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Selenium_Test_Suite" title="com.seletest.AppTest" class="method navigator-link" hash-for-method="doctest">doctest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Selenium_Test_Suite" title="com.seletest.AppTest" class="method navigator-link" hash-for-method="doctest">doctest</a> <!-- method navigator-link -->
@@ -132,6 +137,13 @@
                   <span class="method-name">doctest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doctest">
+                  </a> <!-- doctest -->
+                  <span class="method-name">doctest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Selenium_Test_Suite-class-passed -->
         </div> <!-- panel Selenium_Test_Suite -->
@@ -143,12 +155,17 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Selenium Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Selenium Test - 1&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Selenium Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Selenium Test - 1&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.seletest.AppTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Selenium Test - 1 --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Selenium Test - 2&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.seletest.AppTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Selenium Test - 2 --&gt;
 &lt;/suite&gt; &lt;!-- Selenium Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,6 +178,9 @@
             <ul>
               <li>
                 <span class="test-name">Selenium Test - 1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Selenium Test - 2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,16 +206,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'doctest')
 data.setCell(0, 2, 'com.seletest.AppTest')
-data.setCell(0, 3, 1656);
+data.setCell(0, 3, 2156);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'doctest')
+data.setCell(1, 2, 'com.seletest.AppTest')
+data.setCell(1, 3, 2147);
 window.suiteTableData['Selenium_Test_Suite']= { tableData: data, tableDiv: 'times-div-Selenium_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Selenium_Test_Suite">
               </div> <!-- times-div-Selenium_Test_Suite -->
             </div> <!-- times-div -->
@@ -226,13 +250,25 @@ return data;
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">doctest</span>
-                <span class="method-start">3203 ms</span>
+                <span class="method-start">6039 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doctest</span>
+                <span class="method-start">6148 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4861 ms</span>
+                <span class="method-start">8191 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8305 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
