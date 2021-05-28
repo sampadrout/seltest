@@ -21,3 +21,8 @@ jobs:
         env:
           SELENIUM_HUB_HOST: 'localhost'
         run: mvn clean test
+      - name: Deploy report to github pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .target/surefire-reports
